@@ -1,0 +1,9 @@
+// content/videos.json में ऐड करें
+{
+    "id": 3,
+    "title": "नया ट्यूटोरियल",
+    "description": "यह नया वीडियो है",
+    "embed": "https://youtube.com/embed/NEW_VIDEO_ID",
+    "date": "2024-01-25",
+    "duration": "20:00"
+}
