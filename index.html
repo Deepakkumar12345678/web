@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्राइवेट एक्सेस पोर्टल</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>प्राइवेट पोर्टल</h1>
+        </div>
+        
+        <div class="login-box">
+            <h2>एक्सेस करने के लिए लॉगिन करें</h2>
+            <input type="password" id="passwordInput" placeholder="पासवर्ड दर्ज करें">
+            <button onclick="checkPassword()">एक्सेस प्राप्त करें</button>
+            <div id="errorMessage"></div>
+        </div>
+        
+        <div class="features">
+            <h3>उपलब्ध कंटेंट:</h3>
+            <div id="contentList"></div>
+        </div>
+    </div>
+    
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/content-loader.js"></script>
+</body>
+</html>
