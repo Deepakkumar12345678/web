@@ -1,0 +1,23 @@
+{
+    "siteName": "प्राइवेट पोर्टल",
+    "adminEmail": "admin@example.com",
+    "externalLinks": [
+        {
+            "title": "गिटहब रेपो",
+            "description": "सोर्स कोड",
+            "url": "https://github.com/yourusername/repo",
+            "icon": "fab fa-github"
+        },
+        {
+            "title": "अपना ब्लॉग",
+            "description": "नए अपडेट्स",
+            "url": "https://yourblog.com",
+            "icon": "fas fa-blog"
+        }
+    ],
+    "features": {
+        "allowNewPages": true,
+        "maxUsers": 10,
+        "autoUpdate": true
+    }
+}
