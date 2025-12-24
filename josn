@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "ट्यूटोरियल 1",
+        "description": "पहला वीडियो ट्यूटोरियल",
+        "embed": "https://www.youtube.com/embed/VIDEO_ID_1",
+        "date": "2024-01-15",
+        "duration": "10:30"
+    },
+    {
+        "id": 2,
+        "title": "ट्यूटोरियल 2",
+        "description": "दूसरा वीडियो ट्यूटोरियल",
+        "embed": "https://www.youtube.com/embed/VIDEO_ID_2",
+        "date": "2024-01-20",
+        "duration": "15:45"
+    }
+]
