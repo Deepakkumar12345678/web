@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्राइवेट डैशबोर्ड</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/content.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-left">
+            <h1><i class="fas fa-lock-open"></i> प्राइवेट डैशबोर्ड</h1>
+            <p>स्वागत है! आपको पूर्ण एक्सेस प्राप्त है</p>
+        </div>
+        <div class="header-right">
+            <button onclick="AuthSystem.logout()" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> लॉगआउट
+            </button>
+        </div>
+    </header>
+    
+    <main class="dashboard-main">
+        <!-- साइडबार - नेविगेशन -->
+        <aside class="sidebar">
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <h3>विशेष यूजर</h3>
+                <p>प्रीमियम एक्सेस</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" onclick="loadContent('videos')"><i class="fas fa-video"></i> वीडियो लाइब्रेरी</a></li>
+                    <li><a href="#" onclick="loadContent('documents')"><i class="fas fa-file-alt"></i> डॉक्यूमेंट्स</a></li>
+                    <li><a href="#" onclick="loadContent('links')"><i class="fas fa-link"></i> उपयोगी लिंक्स</a></li>
+                    <li><a href="#" onclick="loadContent('updates')"><i class="fas fa-bell"></i> नए अपडेट्स</a></li>
+                </ul>
+            </nav>
+            
+            <div class="content-stats">
+                <h4><i class="fas fa-chart-line"></i> स्टेटस</h4>
+                <p id="contentCount">लोड हो रहा है...</p>
+            </div>
+        </aside>
+        
+        <!-- मुख्य कंटेंट एरिया -->
+        <section class="content-area">
+            <div class="content-header">
+                <h2 id="contentTitle">वीडियो लाइब्रेरी</h2>
+                <div class="content-controls">
+                    <input type="text" id="searchInput" placeholder="सर्च करें...">
+                    <select id="contentFilter">
+                        <option value="all">सभी</option>
+                        <option value="new">नए</option>
+                        <option value="popular">पॉपुलर</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="content-grid" id="contentContainer">
+                <!-- यहाँ कंटेंट डायनामिक लोड होगा -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>कंटेंट लोड हो रहा है...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- एक्सटर्नल लिंक्स सेक्शन -->
+    <section class="external-links">
+        <h3><i class="fas fa-external-link-alt"></i> एक्सटर्नल रिसोर्सेज</h3>
+        <div class="links-grid" id="externalLinks"></div>
+    </section>
+    
+    <footer>
+        <p>© 2024 प्राइवेट पोर्टल | अंतिम अपडेट: <span id="lastUpdate"></span></p>
+    </footer>
+    
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/content-loader.js"></script>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
