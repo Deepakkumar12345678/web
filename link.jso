@@ -1,0 +1,7 @@
+// content/links.json में
+{
+    "title": "नया रिसोर्स",
+    "url": "https://newresource.com",
+    "description": "यह नया लिंक है",
+    "icon": "fas fa-link"
+}
