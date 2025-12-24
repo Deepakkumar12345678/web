@@ -1,7 +1,7 @@
 // पासवर्ड और यूजर मैनेजमेंट
 const AuthSystem = {
     // मास्टर पासवर्ड (आप बदल सकते हैं)
-    masterPassword: "MySecure@123",
+    masterPassword: "DTYPL5133",
     
     // सेशन मैनेजमेंट
     init: function() {
